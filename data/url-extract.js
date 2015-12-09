@@ -15,7 +15,7 @@ for (var i = 0; i < downloadSpans.length; ++i) {
   var assignmentName = spanElement.getAttribute("assetname");
   var submissionId = spanElement.getAttribute("submissionid");
   var studentName = spanElement.getAttribute("studentname");
-  desiredLink = "http://mylabs.px.pearsoned.com/Pegasus/Modules/AssessmentTool/Presentation/AutoGrader/frmGradeITReportInterface.aspx?Reports=2&SubmissionID=" + submissionId + "&AssignmentName=" + assignmentName + "&UserName=" + studentName + "&GradingType=2";
+  desiredLink = "https://mylabs.px.pearsoned.com/Pegasus/Modules/AssessmentTool/Presentation/AutoGrader/frmGradeITReportInterface.aspx?Reports=2&SubmissionID=" + submissionId + "&AssignmentName=" + assignmentName + "&UserName=" + studentName + "&GradingType=2";
   desiredText = studentName + '--' + assignmentName + '--' + submissionId + '.zip';
   anchorElement.setAttribute('download', desiredText);
   anchorElement.setAttribute('href',desiredLink);
@@ -30,5 +30,5 @@ for (var i = 0; i < downloadSpans.length; ++i) {
 
 }
 
-window.alert("Buck download is ready now for " + downloadSpans.length + " links.")
+window.alert("Bulk download is ready now for " + downloadSpans.length + " links.")
 
